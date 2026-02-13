@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Estudo - Express API</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📡 Sistema de Estudo - Express + API REST</h1>
+    <p>Visualização completa de Request e Response na parte debaixo da pagina</p>
+  </header>
+
+  <main>
+
+    <!-- ================= REGISTRO ================= -->
+    <section class="card">
+      <h2>📝 Registrar Usuário</h2>
+
+      <div class="form-group">
+        <label>Nome</label>
+        <input id="registerName" type="text" placeholder="Digite seu nome" />
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input id="registerEmail" type="email" placeholder="Digite seu email" />
+      </div>
+
+      <div class="form-group">
+        <label>Senha</label>
+        <input id="registerPassword" type="password" placeholder="Digite sua senha" />
+      </div>
+
+      <button id="registerBtn" class="btn primary">
+        Registrar
+      </button>
+    </section>
+
+    <!-- ================= LOGIN ================= -->
+    <section class="card">
+      <h2>🔐 Login</h2>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input id="loginEmail" type="email" placeholder="Digite seu email" />
+      </div>
+
+      <div class="form-group">
+        <label>Senha</label>
+        <input id="loginPassword" type="password" placeholder="Digite sua senha" />
+      </div>
+
+      <button id="loginBtn" class="btn success">
+        Login
+      </button>
+
+      <div class="token-box">
+        <strong>Token JWT:</strong>
+        <p id="tokenDisplay">Nenhum token gerado</p>
+      </div>
+    </section>
+
+    <!-- ================= TASKS ================= -->
+ <section class="card">
+  <h2>📌 Criar Tarefa</h2>
+  <div class="form-group">
+    <label>Título da Task</label>
+    <input id="taskTitle" type="text" placeholder="Digite o título da tarefa" />
+  </div>
+  <button id="createTaskBtn" class="btn warning">Criar Task</button>
+
+  <hr />
+
+  <h3>📋 Minhas Tasks</h3>
+  <ul id="taskList" class="task-list">
+    <!-- Tasks serão inseridas aqui pelo JS -->
+  </ul>
+</section>
+
+
+    <!-- ================= CONSOLE API ================= -->
+    <section class="card console-card">
+      <h2>🖥 Console da API</h2>
+      <p>Visualização detalhada da requisição e resposta HTTP:</p>
+      <pre id="apiConsole"></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto para estudo de Express, JWT, REST e segurança (CSP)</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
