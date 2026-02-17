@@ -295,5 +295,3 @@ Cliente → Rota → Middleware → Controller → Banco → Response
 | CORS | Permitir acesso externo |
 
 ---
-
-📌 Express é simples, flexível e extremamente utilizado para construção de APIs REST modernas.
